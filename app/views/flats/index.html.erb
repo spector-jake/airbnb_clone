@@ -1,0 +1,9 @@
+<h1>Flats#index</h1>
+  <% @flats.each do |flat| %>
+  <div>
+    <p><%= link_to flat["name"], "/flats/#{flat["id"]}" %></p>
+    <p><%= flat["priceCurrency"] %>, <%= flat["price"] %></p>
+    <br>
+  </div>
+      <% end %>
+
